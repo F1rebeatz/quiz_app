@@ -1,6 +1,6 @@
 const quizData = [
   {
-    question: "How old is Florin?",
+    question: "When was the first computer created?",
     a: "1963",
     b: "2000",
     c: "1956",
@@ -8,7 +8,7 @@ const quizData = [
     correct: "d",
   },
   {
-    question: "What is the mpst used programming language?",
+    question: "What is the most used programming language?",
     a: "Java",
     b: "C",
     c: "Python",
@@ -21,7 +21,7 @@ const quizData = [
     b: "Donald Trump",
     c: "Joe Biden",
     d: "Obivan Kennobi",
-    correct: "b",
+    correct: "c",
   },
 
   {
@@ -96,7 +96,7 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2>`;
+      quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2> <button onclick="location.reload()">Reload</button>`;
     }
   }
 });
